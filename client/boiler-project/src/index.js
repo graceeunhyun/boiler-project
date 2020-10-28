@@ -8,11 +8,13 @@ import { applyMiddleware, createStore } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk'
 import Reducer from './_reducers/index'
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
-// 원래는 그냥 createStore 를 해주는 데 promise 와 function 도 받도록 
+// 원래는 그냥 createStore 를 해주는 데 promise 와 function 도 받도록 middleware 를 같이 인자에 넣어준다. 
 const createStoreWithMiddleware =applyMiddleware(promiseMiddleware, ReduxThunk)(createStore);
 
 ReactDOM.render(
+  //chrome 에 있는 devtools_extension 을 넣어서 사용한 경우 
   <Provider
   store = {createStoreWithMiddleware(Reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__&&

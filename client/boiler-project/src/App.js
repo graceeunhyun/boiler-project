@@ -16,18 +16,18 @@ function App() {
     <Router>
           {/* div 는 위에 목차처럼 하기 위해서 */}
       <div>
-        {/* <ul>
+        <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/login">로그인 페이지</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/register">Register 페이지</Link>
           </li>
-        </ul> */}
-        {/* <hr /> */}
+        </ul>
+        <hr />
         {/*
           A <Switch> looks through all its children <Route>
           elements and renders the first one whose path
