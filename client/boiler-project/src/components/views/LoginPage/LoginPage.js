@@ -32,17 +32,17 @@ function LoginPage(props) {
             email: Email,
             password : Password
         }
+        props.history.push('/')
+        // dispatch(loginUser(body))
+        // .then(response => {
+        //     if(response.payload.loginSuccess) {
+        //         // 페이지를 이동 시켜주고 싶을 때의 동작 
+        //         props.history.push('/')
+        //     }
+        //     else {
 
-        dispatch(loginUser(body))
-        .then(response => {
-            if(response.payload.loginSuccess) {
-                // 페이지를 이동 시켜주고 싶을 때의 동작 
-                props.history.push('/')
-            }
-            else {
-
-            }
-        })
+        //     }
+        // })
 
     }
 

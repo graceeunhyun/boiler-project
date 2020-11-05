@@ -10,12 +10,16 @@ import {
 import LandingPage from './components/views/LandingPage/LandingPage'
 import LoginPage from './components/views/LoginPage/LoginPage'
 import RegisterPage from './components/views/RegisterPage/RegisterPage'
+import { Button, Layout, Sliderm  } from 'antd';
+
 
 function App() {
   return (
     <Router>
           {/* div 는 위에 목차처럼 하기 위해서 */}
       <div>
+      <Button type ="default">Button</Button>
+      
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -43,8 +47,10 @@ function App() {
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/register" component={RegisterPage} />
         </Switch>
+        
       </div>
     </Router>
+    
   );
 }
   // You can think of these components as "pages"

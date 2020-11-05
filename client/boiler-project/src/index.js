@@ -15,14 +15,14 @@ const createStoreWithMiddleware =applyMiddleware(promiseMiddleware, ReduxThunk)(
 
 ReactDOM.render(
   //chrome 에 있는 devtools_extension 을 넣어서 사용한 경우 
-  <Provider
-  store = {createStoreWithMiddleware(Reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__&&
-  window.__REDUX_DEVTOOLS_EXTENSION__())}>
+  // <Provider 
+  //  = {createStoreWithMiddleware(Reducer,
+  // winstoredow.__REDUX_DEVTOOLS_EXTENSION__&&
+  // window.__REDUX_DEVTOOLS_EXTENSION__())}>
   <React.StrictMode> 
     <App />
-  </React.StrictMode>
-  </Provider>,
+  </React.StrictMode>,
+  // </Provider>,
   document.getElementById('root')
 );
 
